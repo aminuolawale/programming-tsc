@@ -1,0 +1,36 @@
+Chapter 1: introduction.
+
+Steps in compilation:
+1. Code gets converted to Abstract Syntax Tree (AST)
+2. AST gets converted to bytecode
+3. Bytecode gets executed by the runtime.
+
+Typescript's compiler is special in that it first converts the code to javascript.
+
+In general, it is good to let Typescript infer as many types for you as possible (as it seems to be very good at it),
+so as to keep explicitly typed code to a minimum. (I am a little surprised by this as I expected explicit typing to be encouraged)
+
+Javascript is dynamically typed, it needs to run your program before it can infer the types. Typescript on the other hand is nearly statically typed 
+in that it infers the types of variables at compile time but does not need to be able to infer all of them before executing the program.
+
+>> Incrementally compiled statically typed languages. different from regular statically typed languages in that the whole program doesn't need to be 
+recompiled if small changes are made. Exactly how small do the changes need to be? I have no idea.
+
+TSC (the typescript compiler) is a self-hosted compiler i.e a compiler that compiles itself.
+
+The tsconfig.json file is important as it is what dictates to ts how to compile the code and more.
+it's components:
+- compilerOptions: 
+    - lib : the typescript api's and libraries the compiler should assume exists in the environmet
+    - outDir: the directory to output the compiled code to
+    - target: the target compilation js version
+    - module: the type of modules TSC should compile to.
+- include: the folders TSC should check for TS source files.
+
+We can use this module to generate a tsc file
+./node_modules/.bin/tsc --init
+basically I can invoke the tsc  like so
+-> ./node_modules/.bin/tsc
+Your ts project should also have a tslint file.
+We have already installed tslint in our project and can invoke it like so
+-> ./node_modules/.bin/tslint 

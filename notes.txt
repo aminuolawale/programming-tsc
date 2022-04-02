@@ -1,0 +1,24 @@
+Book: Programming typescript by Borish Cheny
+Pages: 324
+Planned completion time: 1 week
+Schedule: 50 pages per day
+
+1. Overview
+2. The typescript language
+3. Typescript types
+-------------- Thur
+4. Functions
+5. Classes and Interfaces
+---------------- Fri
+6. Advanced Types
+7. Handling errors
+---------------- Sat
+8. Async Programming, Concurrency and Parallelism
+-------------------- Sun
+9. Frontend and backend frameworks
+-------------------- Mon
+10. Namespaces and Modules
+11. Interoperating with javascript
+------------------- Tue
+12. Building and running typescript
+13. Conclusion. Wed/Thur

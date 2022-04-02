@@ -1,0 +1,1 @@
+// enable the no-invalid-this rule for tslint to prevent the use of this in non-method functions
